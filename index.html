@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Forge3D AI</title><link rel="stylesheet" href="style.css"/>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head><body><header><div class="logo">◈ <b>FORGE3D</b><span> AI</span></div><div class="tag">FREE 3D WORKSHOP</div></header>
+<main><section class="hero"><div class="eyebrow">YOUR IDEAS. MADE PRINTABLE.</div><h1>Make something<br><em>real.</em></h1><p>Describe a model, preview it in 3D, and export an STL to print.</p></section>
+<div class="workspace"><aside class="panel"><h2>CREATE MODEL</h2><label for="prompt">Describe your object</label><textarea id="prompt" placeholder="A simple cowboy hat, 4 inches wide..."></textarea>
+<div class="row"><button id="generate" class="primary">Generate preview ↗</button><button id="clear" class="ghost">Reset</button></div>
+<p class="note">This demo makes basic geometric previews from your prompt. Full AI mesh generation requires connecting a model/server.</p>
+<hr/><h3>QUICK SHAPES</h3><div class="chips"><button data-shape="hat">Cowboy hat</button><button data-shape="cup">Cup</button><button data-shape="gear">Gear</button><button data-shape="cube">Cube</button></div>
+<hr/><h3>EXPORT</h3><button id="stl" class="secondary" disabled>↓ Download STL</button><p class="note">STL exports the current preview geometry.</p></aside>
+<section class="viewer"><div class="viewer-top"><span>LIVE PREVIEW</span><span id="status">READY</span></div><div id="canvas"></div><div class="viewer-bottom"><span>Drag to rotate · Scroll to zoom</span><span>MM / STL</span></div></section></div>
+<section class="steps"><div><b>01</b><span>Describe it</span></div><div><b>02</b><span>Preview & refine</span></div><div><b>03</b><span>Export & print</span></div></section>
+<footer>FORGE3D AI <span>Prototype · Open-source-friendly</span></footer></main>
+<script type="module" src="app.js"></script></body></html>
